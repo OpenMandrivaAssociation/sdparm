@@ -6,6 +6,7 @@ License:	BSD
 Group:		System/Kernel and hardware
 URL:		http://www.torque.net/sg/sdparm.html
 Source0:	http://www.torque.net/sg/p/%{name}-%{version}.tar.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 SCSI disk parameters are held in mode pages. This utility lists or
