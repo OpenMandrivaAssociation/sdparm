@@ -1,7 +1,7 @@
 Summary:	List or change SCSI disk parameters
 Name:		sdparm
-Version:	1.02
-Release:	%mkrel 2
+Version:	1.03
+Release:	%mkrel 1
 License:	BSD
 Group:		System/Kernel and hardware
 URL:		http://www.torque.net/sg/sdparm.html
@@ -24,7 +24,8 @@ that stop or slow it down. Use with care.
 %setup -q
 
 %build
-%configure
+%configure2_5x
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
