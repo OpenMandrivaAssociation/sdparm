@@ -1,11 +1,11 @@
 Summary:	List or change SCSI disk parameters
 Name:		sdparm
-Version:	1.03
-Release:	%mkrel 3
+Version:	1.04
+Release:	%mkrel 1
 License:	BSD
 Group:		System/Kernel and hardware
-URL:		http://www.torque.net/sg/sdparm.html
-Source0:	http://www.torque.net/sg/p/%{name}-%{version}.tar.bz2
+URL:		http://sg.danny.cz/sg/sdparm.html 
+Source0:	http://sg.danny.cz/sg/p/%{name}-%{version}.tgz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -28,11 +28,11 @@ that stop or slow it down. Use with care.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
