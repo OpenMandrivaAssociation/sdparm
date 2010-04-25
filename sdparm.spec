@@ -1,6 +1,6 @@
 Summary:	List or change SCSI disk parameters
 Name:		sdparm
-Version:	1.04
+Version:	1.05
 Release:	%mkrel 1
 License:	BSD
 Group:		System/Kernel and hardware
