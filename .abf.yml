@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   sdparm-1.08.tar.bz2: dfa42840cf2b982cb7a026cd582f0225c0dcdfb8
+sources:
+  sdparm-1.09.tar.xz: a568063629b507b4e443a67388ebaf505754223b
