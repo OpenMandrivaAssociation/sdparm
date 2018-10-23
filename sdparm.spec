@@ -1,11 +1,11 @@
 Summary:	List or change SCSI disk parameters
 Name:		sdparm
-Version:	1.08
-Release:	10
+Version:	1.10
+Release:	1
 License:	BSD
 Group:		System/Kernel and hardware
 URL:		http://sg.danny.cz/sg/sdparm.html 
-Source0:	http://sg.danny.cz/sg/p/%{name}-%{version}.tar.bz2
+Source0:	http://sg.danny.cz/sg/p/%{name}-%{version}.tar.xz
 
 %description
 SCSI disk parameters are held in mode pages. This utility lists or
@@ -20,14 +20,14 @@ Warning: It is possible (but unlikely) to change SCSI disk settings
 that stop or slow it down. Use with care.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc ChangeLog README CREDITS AUTHORS COPYING
