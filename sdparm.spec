@@ -1,11 +1,12 @@
 Summary:	List or change SCSI disk parameters
 Name:		sdparm
 Version:	1.10
-Release:	1
+Release:	2
 License:	BSD
 Group:		System/Kernel and hardware
 URL:		http://sg.danny.cz/sg/sdparm.html 
 Source0:	http://sg.danny.cz/sg/p/%{name}-%{version}.tar.xz
+BuildRequires:	sg3_utils-devel
 
 %description
 SCSI disk parameters are held in mode pages. This utility lists or
