@@ -4,7 +4,7 @@ Version:	1.12
 Release:	2
 License:	BSD
 Group:		System/Kernel and hardware
-URL:		http://sg.danny.cz/sg/sdparm.html 
+URL:		https://sg.danny.cz/sg/sdparm.html 
 Source0:	http://sg.danny.cz/sg/p/%{name}-%{version}.tar.xz
 BuildRequires:	sg3_utils-devel
 
